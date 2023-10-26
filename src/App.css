@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url('https://img.freepik.com/premium-photo/purple-wallpapers-that-are-purple-wallpapers_578000-1240.jpg');
+  background-size: cover;
+  margin: 0;
+  font-family: "Lato", sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header{
+  background-color: white;
+  width: 100%;
+  border: 0px solid red;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 3px 1px black;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header input{
+  width: 500px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #808080;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid black;
+  padding: 5px 20px;
+}
+main{
+  width: 80%;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+main section{
+  width: 26%;
+  height: auto;
+  margin-top: 40px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main section .moviePoster img{
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+main section .movieInfo{
+  padding: 10px 3%;
+  box-sizing: border-box;
+  background-color: white;
+}
+main section .movieInfo h3{
+  font-size: 23px;
+  font-weight: 700;
+  color: black;
+}
+main section .movieInfo span{
+  display: block;
 }
